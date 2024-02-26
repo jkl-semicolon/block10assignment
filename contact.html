@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Contact Us!</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section>
+
+      <h2>Any questions or comments? Please send us a message!</h2>
+
+      <br />
+
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <br />
+        <br />
+
+        <label for="emailAddress">Email Address:</label>
+        <input type="email" id="emailAddress" name="emailAddress" required/>
+
+        <br />
+        <br />
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="number" id="phoneNumber" name="phoneNumber"/>
+
+        <br />
+        <br />
+
+        <label for="contactReason">Reason for Contact:</label>
+        <select name="contactReason" id="contactReason">
+          <option value="">Please select from dropdown.</option>
+          <option value="propertyInformation">Property Information</option>
+          <option value="bookingInquiry">Booking Inquiry</option>
+          <option value="housePolicies">House Policies</option>
+          <option value="other">Other</option>
+        </select>
+
+        <br />
+        <br />
+
+        <label for="message">Message:</label>
+        <br />
+        <textarea id="message" name="message" rows="20" cols="50" required></textarea>
+
+        <br />
+        <br />
+
+        <input type="checkbox" id="agreeToContact" name="agreeToContact" required>
+        <label for="agreeToContact">I agree to receive emails, phone calls, and/or text <br>messages regarding my inquiry into Overlook House.</label>
+
+        <br />
+        <br />
+
+        <input type="submit" value="Press to Submit"/>
+
+      </form>
+    </section>
+  </body>
+</html>
